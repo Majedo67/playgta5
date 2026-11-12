@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Create Xcode project
         run: |
-          mkdir -p build/Payload
+          mkdir -p build/PlayGTA5Mobile.xcodeproj build/Payload
           cat > build/PlayGTA5Mobile.xcodeproj/project.pbxproj <<'PBX'
           // !$*UTF8*$!
           { archiveVersion = 1; classes = {}; objectVersion = 56; objects = {

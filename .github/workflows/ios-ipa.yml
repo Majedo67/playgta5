@@ -41,7 +41,7 @@ jobs:
           PBX
       - name: Build unsigned IPA
         run: |
-          xcodebuild -project build/PlayGTA5Mobile.xcodeproj -scheme PlayGTA5Mobile -target PlayGTA5Mobile -configuration Release -sdk iphoneos -derivedDataPath build/Derived CODE_SIGNING_ALLOWED=NO build
+          xcodebuild -project build/PlayGTA5Mobile.xcodeproj -scheme PlayGTA5Mobile -configuration Release -sdk iphoneos -derivedDataPath build/Derived CODE_SIGNING_ALLOWED=NO build
           cp -R build/Derived/Build/Products/Release-iphoneos/PlayGTA5Mobile.app build/Payload/
           cd build && zip -qr PlayGTA5Mobile-unsigned.ipa Payload
       - name: Upload IPA

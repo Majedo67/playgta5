@@ -23,8 +23,8 @@ jobs:
           { archiveVersion = 1; classes = {}; objectVersion = 56; objects = {
             A001 = { isa = PBXProject; buildConfigurationList = A010; compatibilityVersion = "Xcode 14.0"; mainGroup = A002; projectDirPath = ""; projectRoot = ""; targets = (A003,); };
             A002 = { isa = PBXGroup; children = (A004,A005); sourceTree = "<group>"; };
-            A004 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "../../ios/PlayGTA5Mobile/PlayGTA5MobileApp.swift"; sourceTree = "<group>"; };
-            A005 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "../../ios/PlayGTA5Mobile/GameWebView.swift"; sourceTree = "<group>"; };
+            A004 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "../ios/PlayGTA5Mobile/PlayGTA5MobileApp.swift"; sourceTree = "<group>"; };
+            A005 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "../ios/PlayGTA5Mobile/GameWebView.swift"; sourceTree = "<group>"; };
             A006 = { isa = PBXBuildFile; fileRef = A004; };
             A007 = { isa = PBXBuildFile; fileRef = A005; };
             A003 = { isa = PBXNativeTarget; buildConfigurationList = A011; buildPhases = (A008,A009); buildRules = (); dependencies = (); name = PlayGTA5Mobile; productName = PlayGTA5Mobile; productReference = A012; productType = "com.apple.product-type.application"; };
@@ -35,8 +35,8 @@ jobs:
             A011 = { isa = XCConfigurationList; buildConfigurations = (A015,A016); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
             A013 = { isa = XCBuildConfiguration; buildSettings = { SDKROOT = iphoneos; }; name = Debug; };
             A014 = { isa = XCBuildConfiguration; buildSettings = { SDKROOT = iphoneos; }; name = Release; };
-            A015 = { isa = XCBuildConfiguration; buildSettings = { PRODUCT_BUNDLE_IDENTIFIER = com.majedo67.playgta5mobile; PRODUCT_NAME = PlayGTA5Mobile; INFOPLIST_FILE = ../../ios/PlayGTA5Mobile/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 15.0; TARGETED_DEVICE_FAMILY = "1,2"; SWIFT_VERSION = 5.0; CODE_SIGNING_ALLOWED = NO; }; name = Debug; };
-            A016 = { isa = XCBuildConfiguration; buildSettings = { PRODUCT_BUNDLE_IDENTIFIER = com.majedo67.playgta5mobile; PRODUCT_NAME = PlayGTA5Mobile; INFOPLIST_FILE = ../../ios/PlayGTA5Mobile/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 15.0; TARGETED_DEVICE_FAMILY = "1,2"; SWIFT_VERSION = 5.0; CODE_SIGNING_ALLOWED = NO; }; name = Release; };
+            A015 = { isa = XCBuildConfiguration; buildSettings = { PRODUCT_BUNDLE_IDENTIFIER = com.majedo67.playgta5mobile; PRODUCT_NAME = PlayGTA5Mobile; INFOPLIST_FILE = ../ios/PlayGTA5Mobile/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 15.0; TARGETED_DEVICE_FAMILY = "1,2"; SWIFT_VERSION = 5.0; CODE_SIGNING_ALLOWED = NO; }; name = Debug; };
+            A016 = { isa = XCBuildConfiguration; buildSettings = { PRODUCT_BUNDLE_IDENTIFIER = com.majedo67.playgta5mobile; PRODUCT_NAME = PlayGTA5Mobile; INFOPLIST_FILE = ../ios/PlayGTA5Mobile/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 15.0; TARGETED_DEVICE_FAMILY = "1,2"; SWIFT_VERSION = 5.0; CODE_SIGNING_ALLOWED = NO; }; name = Release; };
           }; rootObject = A001; }
           PBX
       - name: Build unsigned IPA

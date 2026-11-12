@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <meta name="theme-color" content="#080b12">
+  <title>PlayGTA5 Mobile</title>
+  <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">P</span><span>PlayGTA5 <small>MOBILE</small></span></div>
+    <button id="controlsToggle" class="top-button" type="button">Hide controls</button>
+  </header>
+
+  <main>
+    <section class="screen-wrap" aria-label="Game screen">
+      <iframe id="gameFrame" title="Game screen" src="homepage.html" allow="fullscreen; autoplay; gamepad" allowfullscreen></iframe>
+      <div id="screenMessage" class="screen-message">
+        <strong>Game page not loading?</strong>
+        <span>Choose a compatible game page below. The game data must be hosted separately.</span>
+      </div>
+    </section>
+
+    <section class="connection">
+      <label for="gameUrl">Game page URL</label>
+      <div class="url-row">
+        <input id="gameUrl" type="url" value="homepage.html" spellcheck="false" autocomplete="url">
+        <button id="loadGame" type="button">Load</button>
+      </div>
+      <p>Use a page you own or are authorized to access. The game files must be available from that host.</p>
+    </section>
+
+    <section id="mobileControls" class="controls" aria-label="Touch controls">
+      <div class="left-controls">
+        <div class="joystick" id="joystick" aria-label="Movement joystick">
+          <span class="joy-up">▲</span><span class="joy-down">▼</span>
+          <span class="joy-left">◀</span><span class="joy-right">▶</span>
+          <div class="stick" id="stick"></div>
+        </div>
+        <span class="control-caption">MOVE</span>
+      </div>
+      <div class="right-controls">
+        <button class="action action-jump" data-key=" " type="button">JUMP</button>
+        <button class="action action-run" data-key="Shift" type="button">RUN</button>
+        <button class="action action-use" data-key="e" type="button">USE</button>
+        <button class="action action-fire" data-key="f" type="button">ACTION</button>
+      </div>
+    </section>
+  </main>
+  <script src="mobile.js"></script>
+</body>
+</html>
